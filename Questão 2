@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int somarnumeros(int valor, int n)
+{
+
+    if (valor < n - 1)
+        return valor + somarnumeros(++valor, n);
+
+    return 0;
+}
+
+int main()
+{
+
+    int numeros = 0;
+    int somar = 0;
+    printf("Quantos números serão somados ?\n");
+    scanf("%i", &numeros);
+
+    somar = somarnumeros(somar, numeros);
+    printf("A soma total é: %d\n", somar);
+
+    return 0;
+}
