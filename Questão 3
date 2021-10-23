@@ -16,7 +16,7 @@ int main()
     
     Somar = soma(vetor,8);
     
-    printf("\nResultado da soma = %d", Somar);
+    printf("\nResultado da soma:\n%d", Somar);
     
     return 0;
 }
