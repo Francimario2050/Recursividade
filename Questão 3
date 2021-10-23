@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int soma(int vetor[], int n)
+{
+    if( n == 1 )
+    {
+    return vetor[n-1];
+    }
+    return vetor[n-1] + soma(vetor, n-1);
+}
+
+int main()
+{
+    int vetor[8] = {1,95,541,35,2,65,84,96};
+    int Somar;
+    
+    Somar = soma(vetor,8);
+    
+    printf("\nResultado da soma = %d", Somar);
+    
+    return 0;
+}
